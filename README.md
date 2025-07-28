@@ -1,8 +1,10 @@
-![](./.images/teaser.png)
+![](./images/teaser.png)
+
+This repository contains the code 
+
 ## Installation
 
 ## Documentation
-
 
 ## Key Features
 
