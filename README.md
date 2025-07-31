@@ -6,7 +6,7 @@
 
 ### Overview
 
-This repository contains a sliding ICP approach implemented for the kinematic dual laser scanning system of our ground Unmanned Ground Vehicle (UGV), as described in our previous work ([IEEE Xplore Paper](https://ieeexplore.ieee.org/abstract/document/10302421), [Arxiv Version](https://arxiv.org/pdf/2310.11516). The robot is designed to generate high-resolution point clouds of various crops, including beans, wheat, soybeans, sugar beets, corn, and potatoes, in agricultural fields.
+This repository contains a sliding ICP approach implemented for the kinematic dual laser scanning system of our ground Unmanned Ground Vehicle (UGV), as described in our previous work ([IEEE Xplore Paper](https://ieeexplore.ieee.org/abstract/document/10302421), [Arxiv Version](https://arxiv.org/pdf/2310.11516)). The robot is designed to generate high-resolution point clouds of various crops, including beans, wheat, soybeans, sugar beets, corn, and potatoes, in agricultural fields.
 
 ## Key Features
 
