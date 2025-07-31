@@ -17,7 +17,6 @@ def main(path_data,
     
     #####################################################################################
     # 1) SlidingICP
-    #####################################################################################
 
     # Initialize 
     sICP = SlidingICP(path_data,
@@ -46,16 +45,19 @@ def main(path_data,
     
     #####################################################################################
     # 2) Compute time-dependent calibration from SlidingICP transformations
-    #####################################################################################
 
     sICP.compute_kinematic_calibration_parameter()
 
-    # Create point cloud with kinematic parameters and write to outpath
+    #####################################################################################
+    # 3) Create final point clouds with the time-dependent calibration parameter
+
     pcl, pcr = sICP.create_pointcloud( calibration = "kinematic" )
+
+    # Write point clouds to file
     pcl.write_to_file( path = sICP.path_out, filename = "pc_l_sICP", offset = sICP.config.txyz )
     pcr.write_to_file( path = sICP.path_out, filename = "pc_r_sICP", offset = sICP.config.txyz )
-    
-    print("SlidingICP run successful")
+
+    print("| SlidingICP executed successfully! ")
 
 if __name__ == "__main__":
     main()

@@ -53,7 +53,7 @@ class directgeoreferencing:
             if calibration=="kinematic":
                 R_BS = RotmatZ(self.systemcalibration.xint[idx,3]) @ RotmatY(self.systemcalibration.xint[idx,2]) @ RotmatX(self.systemcalibration.xint[idx,1]) # body to sensor
                 R_SB = R_BS.T # sensor to body
-                dxyz_SB = np.array({self.systemcalibration.xint[idx,4], self.systemcalibration.xint[idx,5], self.systemcalibration.xint[idx,6]}) # translation
+                dxyz_SB = np.array([self.systemcalibration.xint[idx,4], self.systemcalibration.xint[idx,5], self.systemcalibration.xint[idx,6]]) # translation
 
             # Laser points in body frame
             xyz_b_right = np.dot(R_SB, (self.laserlines.frames[idx].XYZ.T) / 1000 ).T + np.tile(dxyz_SB, (len(self.laserlines.frames[idx].XYZ), 1))

@@ -339,10 +339,10 @@ class SlidingICP:
 
         # Fill borders and interpolate using trajectory timestamps
         self.kcalL.fill_borders( self.TL.time )
-        self.kcalL.interpolate( self.TL.time )
+        self.kcalL.interpolate_cubic_spline( self.TL.time )
 
         self.kcalR.fill_borders( self.TR.time )
-        self.kcalR.interpolate( self.TR.time )
+        self.kcalR.interpolate_cubic_spline( self.TR.time )
 
         # Visualize kinematic calibration parameter
         #self.kcalL.plot( self.calL )
@@ -350,25 +350,7 @@ class SlidingICP:
 
         self.kcalL.write_to_file(path_out=self.path_out, fname="l")
         self.kcalR.write_to_file(path_out=self.path_out, fname="r")
-
-        # __________________________________________________________
-        # Create point cloud with kinematic parameters
-
-        georefL = directgeoreferencing( trajectory = self.TL,
-                                        laserlines = self.lmidataL,
-                                        systemcalibration = self.kcalL )
-    
-        georefR = directgeoreferencing( trajectory = self.TR,
-                                        laserlines = self.lmidataR,
-                                        systemcalibration = self.kcalR )    
- 
-        pcl_ = georefL.run(calibration="kinematic")
-        pcr_ = georefR.run(calibration="kinematic")
-
-        pcl_.write_to_file( path = self.path_out, filename = "PCL", offset = self.config.txyz )
-        pcr_.write_to_file( path = self.path_out, filename = "PCR", offset = self.config.txyz )
-
-
+        
 
     def load_transformation_parameters(self, filename, left):
 
