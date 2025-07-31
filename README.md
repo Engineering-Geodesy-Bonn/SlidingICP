@@ -20,10 +20,11 @@ This repository contains a sliding ICP approach implemented for the kinematic du
 
 ## Installation (Docker)
 
-The repository also contains Dockerfile. Please build and run the docker using the following commands: 
+The repository also contains Dockerfile. Please build and run the docker using the following commands:
+  ```bash
   docker build -t sliding_icp_docker .
   docker run -it --name your_test_run sliding_icp_doc:latest 
-
+  ```
 ## Data
 
 The wheat, corn and sugar beet dataset is provided via sciebo share: https://uni-bonn.sciebo.de/s/qgLQ8wfS7oMWase. Download the laser profile data (.bin) for both scanners and the trajectory files (.trj) and copy them into /input folder of the repository. Note that only one dataset can be placed in the input folder. 
