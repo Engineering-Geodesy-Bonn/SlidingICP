@@ -28,11 +28,11 @@ $$
 
 - $\mathbf{T}_{b}^{e}(t)$: Trajectory of the UGV represented as transformation matrix from body reference frame to the Earth reference frame at time \(t\).
 
-- $\Delta \mathbf{T}_{s_{[l]}}^{b}(t)$: Mounting calibration updates for the scanner \(s_{[l]}\) in the body referenec frame over time \(t\).
+- $\Delta \mathbf T_{s_{[l]}}^b(t)$: Mounting calibration updates for the scanner \(s_{[l]}\) in the body referenec frame over time \(t\).
 
-- $\mathbf{T}_{s_{[l]}}^{b}$: Rigid mounting calibration for the sensor \(s_{[l]}\) in the body reference frame.
+- $\mathbf T_{s_{[l]}}^b$: Rigid mounting calibration for the sensor \(s_{[l]}\) in the body reference frame.
 
-- $\mathbf{x}_{i}^{s_{[l]}}(t)$: Object point \(i\) in the sensor \(s_{[l]}\) reference frame at time \(t\).
+- $\mathbf x_{i}^{s_{[l]}}(t)$: Object point \(i\) in the sensor \(s_{[l]}\) reference frame at time \(t\).
 
 ## Installation (Docker)
 
