@@ -24,7 +24,7 @@ $$
 \mathbf x_{i_{[l]}}^{e}(t) = \mathbf T_{b}^{e}(t) \Delta \mathbf T_{s_{[l]}}^b(t) \mathbf T_{s_{[l]}}^b \mathbf x_{i}^{s_{[l]}}(t) 
 $$
 
-- $\mathbf{x}_{i_{[l]}}^{e}(t)$: Object point \(i\) in the Earth coordinate system at time \(t\).
+- $\mathbf{x}_{i_{[l]}}^{e}(t)$: Object point $i$ in the Earth coordinate system at time $t$.
 
 - $\mathbf{T}_{b}^{e}(t)$: Trajectory of the UGV represented as transformation matrix from body reference frame to the Earth reference frame at time \(t\).
 
