@@ -1,9 +1,5 @@
-<p float="left">
-  <img src="./images/corn_id.gif" width="45%" />
-  <img src="./images/corn_height.gif" width="45%" />
-</p>
-
-
+| ![](./images/corn_id.gif) | ![](./images/corn_height.gif) |
+|-----------------------------|------------------------------|
 
 <figure>
   <img src="./images/teaser.png" alt="Teaser Image">
