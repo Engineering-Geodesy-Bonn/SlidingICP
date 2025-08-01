@@ -1,12 +1,4 @@
 <figure>
-  <img src="./images/corn_id.gif" width="100%"/>
-</figure>
-
-<figure>
-  <img src="./images/corn_height.gif" width="100%"/>
-</figure>
-
-<figure>
   <img src="./images/teaser.png" alt="Teaser Image">
   <figcaption>Consistency of the point clouds created with the two laser scanners of our field robot for a) Initial rigid mounting calibration, b) our ICP method (rigid transformation), and c) our sliding ICP method.</figcaption>
 </figure>
