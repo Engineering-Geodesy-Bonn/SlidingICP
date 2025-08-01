@@ -1,6 +1,9 @@
 <figure>
-  <img src="./images/corn_id.gif" width="45%"/>
-  <img src="./images/corn_height.gif" width="45%"/>
+  <img src="./images/corn_id.gif" width="100%"/>
+</figure>
+
+<figure>
+  <img src="./images/corn_height.gif" width="100%"/>
 </figure>
 
 <figure>
