@@ -28,7 +28,7 @@ $$
 The repository also contains Dockerfile. Please build and run the docker using the following commands:
   ```bash
   docker build -t sliding_icp_docker .
-  docker run -it --name your_test_run sliding_icp_doc:latest 
+  docker run -it --name your_test_run sliding_icp_docker:latest 
   ```
 ## Data
 
