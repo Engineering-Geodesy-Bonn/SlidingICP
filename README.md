@@ -1,6 +1,6 @@
 <p float="left">
-  <img src="./images/corn_id.png" width="45%" />
-  <img src="./images/corn_height.png" width="45%" />
+  <img src="./images/corn_id.gif" width="45%" />
+  <img src="./images/corn_height.gif" width="45%" />
 </p>
 
 
