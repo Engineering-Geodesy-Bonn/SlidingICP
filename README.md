@@ -1,7 +1,7 @@
 <table>
 <tr>
-  <td><img src="./images/corn_id.gif" width="45%"></td>
-  <td><img src="./images/corn_h.gif" width="45%"></td>
+  <td><img src="./images/corn_id.gif" width="50%"></td>
+  <td><img src="./images/corn_h.gif" width="50%"></td>
 </tr>
 </table>
 
