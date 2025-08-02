@@ -16,7 +16,7 @@
 
 ### Description
 
-This repository contains a sliding ICP approach implemented for the kinematic dual laser scanning system of our ground Unmanned Ground Vehicle (UGV), as described in our previous work ([IEEE Xplore Paper](https://ieeexplore.ieee.org/abstract/document/10302421), [Arxiv Version](https://arxiv.org/pdf/2310.11516)). The robot is designed to generate high-resolution point clouds of various crops such as beans, wheat, soybeans, sugar beets, corn, and potatoes, in agricultural fields. The U-shape design of the 2×2×2m robot causes the scanner mounting calibration relative to the GNSS/IMU trajectory to change over time when driving in uneven field environments. To address this problem, the method estimates time-dependent mounting calibration updates by:
+This repository contains a sliding ICP approach implemented for the kinematic dual laser scanning system of our ground Unmanned Ground Vehicle (UGV), as described in our previous work ([IEEE RAM](https://ieeexplore.ieee.org/abstract/document/10302421), [Arxiv Version](https://arxiv.org/pdf/2310.11516)). The robot is designed to generate high-resolution point clouds of various crops such as beans, wheat, soybeans, sugar beets, corn, and potatoes, in agricultural fields. The U-shape design of the 2×2×2m robot causes the scanner mounting calibration relative to the GNSS/IMU trajectory to change over time when driving in uneven field environments. To address this problem, the method estimates time-dependent mounting calibration updates by:
 
 1. Creating initial point clouds using rigid mounting calibration of both scanners
 2. Application of an sliding window approach to cut point clouds along the vehicles trajectory
@@ -34,11 +34,12 @@ where
 
 - $\mathbf x_{i_{[l]}}^{e}(t) $: Object point $i$ in the Earth coordinate system at time $(t)$.
 
-- $\mathbf{T}_{b}^{e}(t)$: Trajectory of the UGV represented as transformation matrix from body reference frame to the Earth reference frame at time $(t)$.
+- $\mathbf{T}_{b}^{e}(t)$: Trajectory of the UGV represented as transformation matrix from body reference frame to the Earth reference frame at time $(t)$. It is estimates using a factor graph based trajectory estimation method which fuses GNSS and IMU data, details here: [IEEE RAM](https://ieeexplore.ieee.org/abstract/document/10302421), [Arxiv Version](https://arxiv.org/pdf/2310.11516)
 
 - $\Delta \mathbf T_{s_{[l]}}^b(t)$: Mounting calibration updates for the scanner $s_{[l]}$ in the body referenec frame over time $(t)$.
 
-- $\mathbf T_{s_{[l]}}^b$: Rigid mounting calibration for the sensor $s_{[l]}$ in the body reference frame.
+- $\mathbf T_{s_{[l]}}^b$: Rigid mounting calibration for the sensor $s_{[l]}$ in the body reference frame. It is estimated using a plane-based calibration approach as described here: [IEEE ICRA24](https://ieeexplore.ieee.org/document/10610208), [Arxiv Version](https://arxiv.org/pdf/2403.17788)
+
 
 - $\mathbf x_{i}^{s_{[l]}}(t)$: Object point $i$ in the sensor $s_{[l]}$ reference frame at time $(t)$.
 
