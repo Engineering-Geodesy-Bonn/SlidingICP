@@ -1,9 +1,5 @@
-<table>
-<tr>
-  <td><img src="./images/corn_id.gif" width="50%"></td>
-  <td><img src="./images/corn_h.gif" width="50%"></td>
-</tr>
-</table>
+![Alt text for image1](./images/corn_id.gif)
+![Alt text for image2](./images/corn_h.gif)
 
 <figure>
   <img src="./images/teaser.png" alt="Teaser Image">
