@@ -1,4 +1,4 @@
-<table style="width:100%">
+<table style="width:110%">
   <tr>
     <td style="width:50%; text-align:center;">
       <div style="display:flex; flex-direction:column; align-items:center;">
