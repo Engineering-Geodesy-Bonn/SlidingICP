@@ -1,20 +1,19 @@
 <table style="width:100%">
   <tr>
     <td style="width:50%; text-align:center;">
-      <figure>
-        <img src="./images/corn_id.gif" style="width:100%; height:auto;">
-        <figcaption>Point cloud colored by the scanner index</figcaption>
-      </figure>
+      <div style="display:flex; flex-direction:column; align-items:center;">
+        <img src="./images/corn_id.gif" style="max-width:100%; height:auto;">
+        <div style="text-align:center; margin-top:4px;">Point cloud colored by the scanner index</div>
+      </div>
     </td>
     <td style="width:50%; text-align:center;">
-      <figure>
-        <img src="./images/corn_h.gif" style="width:100%; height:auto;">
-        <figcaption>Point cloud colored by the height</figcaption>
-      </figure>
+      <div style="display:flex; flex-direction:column; align-items:center;">
+        <img src="./images/corn_h.gif" style="max-width:100%; height:auto;">
+        <div style="text-align:center; margin-top:4px;">Point cloud colored by the height</div>
+      </div>
     </td>
   </tr>
 </table>
-
 
 <figure>
   <img src="./images/teaser.png" alt="Teaser Image">
